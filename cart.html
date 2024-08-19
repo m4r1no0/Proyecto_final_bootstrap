@@ -9,252 +9,313 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="mb-4">
-        <nav class="navbar navbar-expand-lg bg-primary">
-            <div class="container-fluid">
-                <div class="col-4">
-                <a class="navbar-brand" href="index.html">Repuestos</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Marca
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="Yamaha.html">Yamaha</a></li>
-                        <li><a class="dropdown-item" href="suzuki.html">Suzuki</a></li>
-                        <li><a class="dropdown-item" href="Honda.html">Honda</a></li>
-                    </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Llantas
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="michellin.html">Michellin</a></li>
-                        <li><a class="dropdown-item" href="pirelli.html">Pirelli</a></li>
-                        <li><a class="dropdown-item" href="kenda.html">Kenda</a></li>
-                    </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Aceites
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="motul.html">Motul</a></li>
-                        <li><a class="dropdown-item" href="mobil.html">Mobil</a></li>
-                        <li><a class="dropdown-item" href="castrol.html">Castrol</a></li>
-                    </ul>
-                    </li>
-
-                    <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Oferas
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item active" href="oferta.html">Productos en descuento</a></li>
-                    </ul>
-                    </div>
-                </ul>
-                </div>
-            </div>
-        </nav>
-    </header>        
-        <section class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>Procesar pago</h2>
-                    <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
-                </div>
-            </div>
-        
-            <div class="row g-5">
-              <div class="col-md-5 col-lg-4 order-1\1">
-                <h4 class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="text-primary">Carrito</span>
-                  <span class="badge bg-primary rounded-pill">3</span>
-                </h4>
-                <ul class="list-group mb-3">
-                  <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div>
-                      <h6 class="my-0">Llantas</h6>
-                      <small class="text-body-secondary">Llanta Michelin Road 6 110/80Zr-19 Sellomatic garantizada</small>
-                    </div>
-                    <span class="text-body-secondary">$12</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div>
-                      <h6 class="my-0">Aceites</h6>
-                      <small class="text-body-secondary">Motul 7100 10w-40 sintentico</small>
-                    </div>
-                    <span class="text-body-secondary">$8</span>
-                  </li>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
-                    <div class="text-success">
-                      <h6 class="my-0">Descuento</h6>
-                      <small>10%</small>
-                    </div>
-                    <span class="text-success">$10 </span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between">
-                    <span>Total</span>
-                    <strong>300.000</strong>
-                  </li>
-                </ul>
-        
-                <form class="card p-2">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Promo code">
-                    <button type="submit" class="btn btn-secondary">Redeem</button>
-                  </div>
-                </form>
+  <header class="mb-4">
+      <nav class="navbar navbar-expand-lg bg-primary">
+          <div class="container-fluid">
+              <div class="col-4">
+              <a class="navbar-brand" href="index.html">Repuestos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
               </div>
-              <div class="col-md-7 col-lg-8">
-                <h4 class="mb-3">Billing address</h4>
-                <form class="needs-validation" novalidate="">
-                  <div class="row g-3">
-                    <div class="col-sm-6">
-                      <label for="firstName" class="form-label">Nombre</label>
-                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                      <div class="invalid-feedback">
-                        Valid first name is required.
-                      </div>
-                    </div>
-        
-                    <div class="col-sm-6">
-                      <label for="lastName" class="form-label">Apellido</label>
-                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                      <div class="invalid-feedback">
-                        Valid last name is required.
-                      </div>
-                    </div>
-        
-                    <div class="col-12">
-                      <label for="username" class="form-label">Usuario</label>
-                      <div class="input-group has-validation">
-                        <span class="input-group-text">@</span>
-                        <input type="text" class="form-control" id="username" placeholder="Username" required="">
-                      <div class="invalid-feedback">
-                          Your username is required.
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div class="col-12">
-                      <label for="email" class="form-label">Correo</label>
-                      <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                      <div class="invalid-feedback">
-                        Please enter a valid email address for shipping updates.
-                      </div>
-                    </div>
-        
-                    <div class="col-12">
-                      <label for="address" class="form-label">Direccion</label>
-                      <input type="text" class="form-control" id="address" required="">
-                      <div class="invalid-feedback">
-                        Please enter your shipping address.
-                      </div>
-                    </div>
-        
-                    <div class="col-md-5">
-                      <label for="country" class="form-label">Pais</label>
-                      <select class="form-select" id="country" required="">
-                        <option value="">Choose...</option>
-                        <option>Colombia</option>
-                        <option>Brasil</option>
-                        <option>United States</option>
-                        <option>Venezuela</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        seleccione un pais.
-                      </div>
-                    </div>
-        
-                  <hr class="my-4">
-        
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="same-address">
-                    <label class="form-check-label" for="same-address">Aceptar terminos</label>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Marca
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Yamaha.html">Yamaha</a></li>
+                      <li><a class="dropdown-item" href="suzuki.html">Suzuki</a></li>
+                      <li><a class="dropdown-item" href="Honda.html">Honda</a></li>
+                  </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Llantas
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="michellin.html">Michellin</a></li>
+                      <li><a class="dropdown-item" href="pirelli.html">Pirelli</a></li>
+                      <li><a class="dropdown-item" href="kenda.html">Kenda</a></li>
+                  </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Aceites
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="motul.html">Motul</a></li>
+                      <li><a class="dropdown-item" href="mobil.html">Mobil</a></li>
+                      <li><a class="dropdown-item" href="castrol.html">Castrol</a></li>
+                  </ul>
+                  </li>
+
+                  <div class="dropdown">
+                  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Oferas
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item active" href="oferta.html">Productos en descuento</a></li>
+                  </ul>
                   </div>
-        
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="save-info">
-                    <label class="form-check-label" for="save-info">Guardar informacion</label>
-                  </div>
-        
-                  <hr class="my-4">
-        
-                  <h4 class="mb-3">Payment</h4>
-        
-                  <div class="my-3">
-                    <div class="form-check">
-                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
-                      <label class="form-check-label" for="credit">Tarjeta credito</label>
-                    </div>
-                    <div class="form-check">
-                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
-                      <label class="form-check-label" for="debit">Tarjeta debito</label>
-                    </div>
-                    <div class="form-check">
-                      <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
-                      <label class="form-check-label" for="paypal">PayPal</label>
-                    </div>
-                  </div>
-        
-                  <div class="row gy-3">
-                    <div class="col-md-6">
-                      <label for="cc-name" class="form-label">Nombre de la tarjeta</label>
-                      <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                      <small class="text-body-secondary">Nombre completo</small>
-                      <div class="invalid-feedback">
-                        Name on card is required
-                      </div>
-                    </div>
-        
-                    <div class="col-md-6">
-                      <label for="cc-number" class="form-label">Numero tarjeta credito</label>
-                      <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                      <div class="invalid-feedback">
-                        Credit card number is required
-                      </div>
-                    </div>
-        
-                    <div class="col-md-3">
-                      <label for="cc-expiration" class="form-label">Fecha de vencimiento</label>
-                      <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                      <div class="invalid-feedback">
-                        Expiration date required
-                      </div>
-                    </div>
-        
-                    <div class="col-md-3">
-                      <label for="cc-cvv" class="form-label">CVV</label>
-                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                      <div class="invalid-feedback">
-                        Security code required
-                      </div>
-                    </div>
-                  </div>
-        
-                  <hr class="my-4">
-        
-                  <button class="w-100 btn btn-primary btn-lg" type="submit">Confirmar compra</button>
-                </form>
+              </ul>
+              </div>
+          </div>
+      </nav>
+  </header>        
+  <section class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Procesar pago</h2>
+        <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+      </div>
+    </div>
+  
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-1\1">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Carrito</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Llantas</h6>
+              <small class="text-body-secondary">Llanta Michelin Road 6 110/80Zr-19 Sellomatic garantizada</small>
+            </div>
+            <span class="text-body-secondary">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Aceites</h6>
+              <small class="text-body-secondary">Motul 7100 10w-40 sintentico</small>
+            </div>
+            <span class="text-body-secondary">$8</span>
+          </li>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+            <div class="text-success">
+              <h6 class="my-0">Descuento</h6>
+              <small>10%</small>
+            </div>
+            <span class="text-success">$10 </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total</span>
+            <strong>300.000</strong>
+          </li>
+        </ul>
+  
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code">
+            <button type="submit" class="btn btn-secondary">Redeem</button>
+          </div>
+        </form>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Billing address</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
               </div>
             </div>
-        </section>
+  
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+  
+            <div class="col-12">
+              <label for="username" class="form-label">Usuario</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder="Username" required="">
+              <div class="invalid-feedback">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-12">
+              <label for="email" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+  
+            <div class="col-12">
+              <label for="address" class="form-label">Direccion</label>
+              <input type="text" class="form-control" id="address" required="">
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+  
+            <div class="col-md-5">
+              <label for="country" class="form-label">Pais</label>
+              <select class="form-select" id="country" required="">
+                <option value="">Choose...</option>
+                <option>Colombia</option>
+                <option>Brasil</option>
+                <option>United States</option>
+                <option>Venezuela</option>
+              </select>
+              <div class="invalid-feedback">
+                seleccione un pais.
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">Aceptar terminos</label>
+            </div>
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info">
+              <label class="form-check-label" for="save-info">Guardar informacion</label>
+            </div>
+  
+            <hr class="my-4">
+  
+            <h4 class="mb-3">Payment</h4>
+  
+            <div class="my-3">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                <label class="form-check-label" for="credit">Tarjeta credito</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="debit">Tarjeta debito</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+  
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <label for="cc-name" class="form-label">Nombre de la tarjeta</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                <small class="text-body-secondary">Nombre completo</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label">Numero tarjeta credito</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="cc-expiration" class="form-label">Fecha de vencimiento</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="cc-cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmarcompra">
+              Confirmar compra
+            </button>
+          </form>
+        </div>
+      </div>
+  </section>
 
-    <footer class="text-center">
-        <p>Marino A Osorio D</p>
-    </footer>
+<!-- Modal -->
+<div class="modal fade" id="confirmarcompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <h2>Confirmar compra</h2>
+       <p>Si esta seguro de la compra seleccione la opcion aceptar de lo contrario saliro</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Compraexitosa">
+          aceptar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<div class="modal fade" id="Compraexitosa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <h2>Felicdades por su compra</h2>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="text-center">
+    <p>Marino A Osorio D</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
